@@ -106,11 +106,9 @@ class App extends React.Component {
     .attr("d", path)
     .style("fill", (d) => {
       if (star_data[d.id]) {
-        console.log('capita', d.id, d.capita, color(d.capita))
         return color(d.capita);
       } else {
         // undefined numbers
-        console.log('und', color(0))
         return color(0);
       }
     })
